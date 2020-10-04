@@ -1,0 +1,33 @@
+//** Header
+div.hero
+    background-image: url(../img/encabezado.jpg)
+    height: 100vh
+    background-position: top center
+    background-size: cover
+    div.contenido-header
+        padding-top: 4rem
+        nav.redes-sociales
+            text-align: center
+            a
+                color: #ffffff
+                font-size: 3rem
+                margin-right: 2rem
+            a:last-child    //Eliminamos el margin-right del úlitmo elememto
+                margin-right: 0
+        div.informacion-evento
+            text-align: center
+            color: #ffffff 
+            p 
+                display: inline
+                font-size: 2rem
+                text-transform: uppercase
+                i
+                    color: #fe4918
+            div.clearfix
+                width: 50%
+                margin: 0 auto
+            p.fecha
+                float: left
+            p.ciudad
+                float: right
+                text-align: right
