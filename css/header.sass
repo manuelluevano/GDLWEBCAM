@@ -41,3 +41,30 @@ div.hero
             .slogan
                 span
                     font-weight: bold
+.barra
+    .contenedor
+        .logo
+            width: 80%
+            img
+                width: 100%
+        .menu-mobil
+            display: none 
+        nav.navegacion-principal   //* Navegación Principal *//
+            display: none
+            a
+                color: #ffffff
+                text-decoration: none
+                font-family: 'Oswald', sans-serif
+                font-size: 2rem
+                text-transform: uppercase
+                margin-right: 1rem
+                padding: 1rem 2rem
+                transition: all .3s ease
+            a:hover
+                background: #fe4918
+            a:last-child    //Eliminamos el margin-right del úlitmo elememto
+                margin-right: 0
+                border: 2px solid #fe4918
+                color: #fe4918
+            a:last-child:hover    //Eliminamos el margin-right del úlitmo elememto
+                color: #ffffff
