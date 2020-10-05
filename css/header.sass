@@ -43,14 +43,21 @@ div.hero
                     font-weight: bold
 .barra
     .contenedor
+        display: grid
+        grid-template-columns: 80% 20%
+        align-items: center
         .logo
             width: 80%
             img
                 width: 100%
         .menu-mobil
-            display: none 
+            display: block
+            font-size: 5rem
+            color: #ffffff
+        .menu-mobil:hover
+            cursor: pointer
         nav.navegacion-principal   //* Navegación Principal *//
-            display: none
+            // display: none
             a
                 color: #ffffff
                 text-decoration: none
@@ -60,6 +67,9 @@ div.hero
                 margin-right: 1rem
                 padding: 1rem 2rem
                 transition: all .3s ease
+                width: 100%
+                display: block
+                text-align: center
             a:hover
                 background: #fe4918
             a:last-child    //Eliminamos el margin-right del úlitmo elememto

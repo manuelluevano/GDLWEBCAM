@@ -54,6 +54,11 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
   font-weight: bold;
 }
 
+.barra .contenedor {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+}
 .barra .contenedor .logo {
   width: 80%;
 }
@@ -61,10 +66,12 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
   width: 100%;
 }
 .barra .contenedor .menu-mobil {
-  display: none;
+  display: block;
+  font-size: 5rem;
+  color: #ffffff;
 }
-.barra .contenedor nav.navegacion-principal {
-  display: none;
+.barra .contenedor .menu-mobil:hover {
+  cursor: pointer;
 }
 .barra .contenedor nav.navegacion-principal a {
   color: #ffffff;
@@ -75,6 +82,9 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
   margin-right: 1rem;
   padding: 1rem 2rem;
   transition: all 0.3s ease;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 .barra .contenedor nav.navegacion-principal a:hover {
   background: #fe4918;
@@ -123,6 +133,9 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
     grid-template-columns: 50% 50%;
     align-items: center;
   }
+  .barra .contenedor .menu-mobil {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (min-width: 768px) {
   .barra .contenedor .logo {
@@ -132,6 +145,10 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
 @media (min-width: 768px) and (min-width: 768px) {
   .barra .contenedor nav.navegacion-principal {
     display: block;
+  }
+  .barra .contenedor nav.navegacion-principal a {
+    width: auto;
+    display: inline-block;
   }
 }
 
