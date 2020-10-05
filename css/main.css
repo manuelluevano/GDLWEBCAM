@@ -29,6 +29,7 @@ div.hero div.contenido-header div.informacion-evento p {
 }
 div.hero div.contenido-header div.informacion-evento p i {
   color: #fe4918;
+  font-size: 3rem;
 }
 div.hero div.contenido-header div.informacion-evento div.clearfix {
   width: 50%;
@@ -40,6 +41,25 @@ div.hero div.contenido-header div.informacion-evento p.fecha {
 div.hero div.contenido-header div.informacion-evento p.ciudad {
   float: right;
   text-align: right;
+}
+div.hero div.contenido-header div.informacion-evento h1.nombre-sitio {
+  font-size: 5.9vw;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+}
+div.hero div.contenido-header div.informacion-evento p.slogan {
+  text-transform: none;
+}
+div.hero div.contenido-header div.informacion-evento .slogan span {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  div.hero div.contenido-header h1.nombre-sitio {
+    font-size: 11.5vw !important;
+    margin: 0;
+    line-height: 1;
+  }
 }
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
@@ -122,6 +142,10 @@ html {
 body {
   background-color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
 }
 
 /* ==========================================================================
