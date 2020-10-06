@@ -235,8 +235,29 @@ body {
 }
 
 /* Globales */
+.section {
+  padding: 3rem 0;
+}
+
+.section p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
 h2 {
   font-family: "Oswald", sans-serif;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2:after {
+  content: "";
+  margin: 0 auto;
+  background-image: url(../img/separador.png);
+  height: 3rem;
+  width: 10rem;
+  display: block;
 }
 
 .contenedor {
