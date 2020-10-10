@@ -152,6 +152,79 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
   }
 }
 
+@media (min-width: 768px) {
+  .programa .programa-evento {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .programa .programa-evento {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .programa nav.menu-programa {
+    display: table;
+  }
+}
+@media (min-width: 768px) {
+  .programa a {
+    display: table-cell !important;
+  }
+}
+
+.programa {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.programa .contenido-programa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.programa .contenido-programa .programa-evento {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem;
+  margin-top: 8rem;
+}
+.programa .contenido-programa .programa-evento .menu-programa {
+  width: 100%;
+  border-bottom: 0.1rem solid #f34918;
+  padding-bottom: 1rem;
+}
+.programa .contenido-programa .programa-evento .menu-programa a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.programa .contenido-programa .programa-evento .menu-programa a i {
+  color: #f34918;
+  font-size: 2.5rem;
+}
+.programa .contenido-programa .programa-evento #talleres .detalle-taller {
+  margin-top: 2rem;
+  border-bottom: 1px solid black;
+  padding: 0rem 1rem;
+}
+.programa .contenido-programa .programa-evento #talleres .detalle-taller:nth-child(3) {
+  border: none;
+}
+.programa .contenido-programa .programa-evento #talleres .detalle-taller p {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.programa .contenido-programa .programa-evento #talleres .detalle-taller p i {
+  color: #f34918;
+  font-size: 3rem;
+}
+
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 /* * What follows is the result of much research on cross-browser styling.
  * * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -246,7 +319,7 @@ body {
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 3.4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -258,6 +331,35 @@ h2:after {
   height: 3rem;
   width: 10rem;
   display: block;
+}
+
+h3 {
+  font-size: 2.6rem;
+  color: #fe4918;
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+}
+
+.button {
+  background-color: #fe4918;
+  padding: 1rem 4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e33000;
+}
+
+.float-right {
+  float: right;
 }
 
 .contenedor {
