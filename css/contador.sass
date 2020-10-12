@@ -1,0 +1,36 @@
+.parallax::before
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    background-attachment: fixed
+
+    filter: brightness(.6)
+.contador
+    position: relative
+    height: auto
+.contador::before
+    background-image: url(../img/bg-resumen.jpg)
+    content: ''
+
+ul.resumen-evento
+    position: relative
+    padding: 12rem 0
+    li
+        width: 50%
+        float: left
+        text-align: center
+        color: #ffffff
+        text-transform: uppercase
+        font-family: 'Oswald', sans-serif
+        font-size: 2.4rem
+        font-weight: bold
+        p.numero
+                color: #fe4918
+                font-size: 7rem
+                display: block
+                margin: 0 0 1rem 0

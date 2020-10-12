@@ -56,3 +56,27 @@ header
     @media (min-width: 768px)    
             a
                 display: table-cell!important
+
+
+// INVITADOS
+.section.invitados
+    @media (min-width: 768px)
+        .lista-invitados
+            grid-template-columns: repeat(2, 1fr)
+    @media (min-width: 992px)
+        .lista-invitados
+            grid-template-columns: repeat(3, 1fr)
+
+
+//  CONTADOR
+.contador
+@media (min-width: 768px)
+    ul.resumen-evento
+        li
+            width: 25%!important
+
+
+// TABLA PRECIOS
+@media (min-width: 768px)
+    .tablas-precios        
+        grid-template-columns: repeat(3, 1fr)

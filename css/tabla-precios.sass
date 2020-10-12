@@ -1,0 +1,42 @@
+.tablas-precios
+    display: grid
+    gap: 1rem
+    text-align: center
+    li
+        list-style: none
+        padding: 1rem
+    .tabla-precio
+        border: 1px solid #e1e1e1
+        background: #ffffff
+        padding: 4rem 0
+        border-radius: .5rem
+        transition: all .3s ease
+        h3
+            font-family: 'Oswald', sans-serif
+            font-size: 1.6rem
+            text-transform: uppercase
+        p.numero
+            font-family: 'Oswald', sans-serif
+            font-size: 6rem
+            font-weight: bold
+            margin: 2rem 0
+        ul
+            li
+                font-family: 'PT Sans', sans-serif
+                font-size: 1.4rem
+                margin-bottom: 2rem
+                text-transform: uppercase
+                color: #868686
+                line-height: 2.6rem
+            li::before
+                font-family: 'FontAwesome'
+                content: '\f00c'
+                display: inline-block
+                vertical-align: top
+                padding: 0 .5rem
+                color: green
+                font-size: 2rem
+.tabla-precio:hover
+    transform: scale(1.1)
+    border: 1px solid #fe4918
+    box-shadow: 0 0 5rem #666
