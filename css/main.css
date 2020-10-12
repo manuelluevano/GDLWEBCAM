@@ -439,6 +439,33 @@ ul.resumen-evento li p.numero {
   text-transform: none;
 }
 
+div.newslatter {
+  position: relative;
+  height: auto;
+}
+
+div.newslatter::before {
+  background-image: url(../img/bg-newsletter.jpg);
+  content: "";
+}
+
+div.newslatter .contenido {
+  padding: 10rem 0;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+div.newslatter .contenido p {
+  font-size: 2rem;
+  text-transform: lowercase;
+}
+div.newslatter .contenido h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-family: "PT Sans", sans-serif;
+}
+
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 /* * What follows is the result of much research on cross-browser styling.
  * * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -587,6 +614,16 @@ img {
 .button.hollow:hover {
   background-color: white;
   color: #fe4918;
+}
+
+.button.transparente {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.button.transparente:hover {
+  background-color: #e33000;
+  border-color: #e33000;
 }
 
 .float-right {
