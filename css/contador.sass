@@ -20,17 +20,31 @@
 ul.resumen-evento
     position: relative
     padding: 12rem 0
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
     li
-        width: 50%
-        float: left
         text-align: center
         color: #ffffff
         text-transform: uppercase
         font-family: 'Oswald', sans-serif
         font-size: 2.4rem
-        font-weight: bold
-        p.numero
-                color: #fe4918
-                font-size: 7rem
-                display: block
-                margin: 0 0 1rem 0
+        
+p.numero
+    font-weight: bold
+    color: #fe4918
+    font-size: 7rem!important
+    display: block
+    margin: 0 0 1rem 0
+
+
+/*  CUENTA REGRESIVA */
+
+div.cuenta-regresiva
+    ul.lista-cuenta-regresiva
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        li
+            text-transform: uppercase
+            font-family: 'Oswald', sans-serif
+            font-size: 2rem
+            text-align: center

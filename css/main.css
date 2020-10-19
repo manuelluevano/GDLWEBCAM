@@ -186,8 +186,8 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
 }
 
 @media (min-width: 768px) {
-  ul.resumen-evento li {
-    width: 25% !important;
+  ul.resumen-evento {
+    grid-template-columns: repeat(4, 1fr) !important;
   }
 }
 @media (min-width: 768px) {
@@ -198,6 +198,11 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
 @media (min-width: 768px) {
   .testimoniales {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  div.cuenta-regresiva ul.lista-cuenta-regresiva {
+    grid-template-columns: repeat(4, 1fr) !important;
   }
 }
 .programa {
@@ -315,22 +320,35 @@ div.hero div.contenido-header div.informacion-evento .slogan span {
 ul.resumen-evento {
   position: relative;
   padding: 12rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 ul.resumen-evento li {
-  width: 50%;
-  float: left;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-size: 2.4rem;
-  font-weight: bold;
 }
-ul.resumen-evento li p.numero {
+
+p.numero {
+  font-weight: bold;
   color: #fe4918;
-  font-size: 7rem;
+  font-size: 7rem !important;
   display: block;
   margin: 0 0 1rem 0;
+}
+
+/*  CUENTA REGRESIVA */
+div.cuenta-regresiva ul.lista-cuenta-regresiva {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+div.cuenta-regresiva ul.lista-cuenta-regresiva li {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .tablas-precios {
@@ -464,6 +482,54 @@ div.newslatter .contenido h3 {
   text-transform: uppercase;
   font-size: 7vw;
   font-family: "PT Sans", sans-serif;
+}
+
+footer {
+  background-color: #353535;
+  padding-top: 4rem;
+  margin-top: 2rem;
+}
+footer .ultimos-tweets li {
+  margin-bottom: 1rem;
+}
+footer .contenido-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .contenido-footer > div {
+  color: #ffffff;
+  padding: 0px 2rem;
+  font-size: 1.2rem;
+}
+footer .contenido-footer > div h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 2rem;
+}
+footer .contenido-footer > div h3 span {
+  color: #f34918;
+}
+
+nav.redes-sociales {
+  text-align: left;
+}
+nav.redes-sociales a {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+nav.redes-sociales a:last-child {
+  margin-right: 0;
+}
+
+.copyright {
+  background-color: #2e2e2e;
+  padding: 1rem 0;
+  margin: 2rem 0 0 0;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
 }
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */

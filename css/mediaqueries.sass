@@ -68,13 +68,10 @@ header
             grid-template-columns: repeat(3, 1fr)
 
 
-//  CONTADOR
-.contador
+//   CONTADOR
 @media (min-width: 768px)
     ul.resumen-evento
-        li
-            width: 25%!important
-
+        grid-template-columns: repeat(4, 1fr)!important
 
 // TABLA PRECIOS
 @media (min-width: 768px)
@@ -86,3 +83,11 @@ header
 @media (min-width: 768px)
     .testimoniales
         grid-template-columns: repeat(3, 1fr)
+
+
+//  Contador Cuenta Regresiva
+    
+@media (min-width: 768px)
+     div.cuenta-regresiva
+         ul.lista-cuenta-regresiva
+             grid-template-columns: repeat(4, 1fr)!important
